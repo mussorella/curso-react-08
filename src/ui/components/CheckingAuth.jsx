@@ -20,4 +20,4 @@ export const CheckingAuth = () => {
         </Grid>
     </Grid>
   )
-}
+}//pantalla de carga

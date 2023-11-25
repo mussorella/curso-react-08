@@ -23,4 +23,4 @@ export const useCheckAuth = () => {
     }, []);
 
     return status;
-}
+}//hook poara atenticar 

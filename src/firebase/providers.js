@@ -2,7 +2,7 @@ import { signInWithEmailAndPassword, createUserWithEmailAndPassword, GoogleAuthP
 import { FirebaseAuth } from './config';
 
 
-const googleProvider = new GoogleAuthProvider();
+const googleProvider = new GoogleAuthProvider();//esto es de firebase, lo uso para llamar al auth de google, como provedor
 
 export const singInWithGoogle = async() => {
 
@@ -36,7 +36,8 @@ export const singInWithGoogle = async() => {
 export const registerUserWithEmailPassword = async({ email, password, displayName }) => {
 
     try {
-        const resp = await createUserWithEmailAndPassword( FirebaseAuth, email, password );
+        const resp = await createUserWithEmailAndPassword( FirebaseAuth, email, password );//esto es para crear una cuenta en firebase
+        
         const { uid, photoURL } = resp.user;
 
         await updateProfile( FirebaseAuth.currentUser, { displayName });

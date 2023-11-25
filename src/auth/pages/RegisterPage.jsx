@@ -30,7 +30,7 @@ export const RegisterPage = () => {
   const { 
     formState, displayName, email, password, onInputChange,
     isFormValid, displayNameValid, emailValid, passwordValid, 
-  } = useForm( formData, formValidations );
+  } = useForm( formData, formValidations );//este s el hook de use from con esteroides
 
   const onSubmit = ( event ) => {
     event.preventDefault();

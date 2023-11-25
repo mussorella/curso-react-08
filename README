@@ -23,3 +23,16 @@
 //npm install @mui/material @emotion/react @emotion/styled
 //npm install @fontsource/roboto
 //npm install @mui/icons-material
+
+
+
+//agregar a github
+//git init
+// git init
+//git add README.md
+//git commit -m "first commit"
+//git branch -M main
+//git remote add origin https://github.com/mussorella/prueba.git
+//git push -u origin main
+//git add --all
+//git push
