@@ -1,0 +1,25 @@
+
+
+//para que funcione esto hay que instalar el react dom 6
+//tambien instalar el MUI para el diesño en la consola
+//react router dom 6
+//instalar firebase, poner datos de la api propia para usar el google identificator
+
+
+//USAMOS: FIREBASE, REACT ROUTER DOM, M UI, REDUX
+
+//HAY QUE ARMAR UNA CONFIG DE FIREBASE ANTES DE APLICARLO(ESTA EN LA CARPETA)
+
+//MUI TIENE QUE ESCRIBIRSE EN MAYUSCULAR Y SE IMPORTAN
+
+
+//los routers sirven para pasar de una apgina a otra, usando la auth por ejemplo, la uth de google se usa con firebase y sino con redux creooo no me acuerdo
+
+
+//npm install firebase
+//npm install react-router-dom
+//npm install react-redux
+//npm install @reduxjs/toolkit
+//npm install @mui/material @emotion/react @emotion/styled
+//npm install @fontsource/roboto
+//npm install @mui/icons-material
