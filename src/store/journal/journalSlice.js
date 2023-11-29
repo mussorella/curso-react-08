@@ -27,10 +27,21 @@ export const journalSlice = createSlice({
             state.notes= action.payload;
         },
         setSaving: (state)=>{
-
+            state.isSaving=true;
+            //TODO : MENSJ DE ERROR
         },
-        updateNote: (state,action)=>{
+        updateNote: (state, action)=>{//actualizo mi referencia local desp de guardarlo en el firestore
+            state.isSaving=false;
+            state.notes=state.notes.map(note=>{
 
+                if(note.id===action.payload.id){
+                    return action.payload;
+
+                }
+
+                return note;
+            })
+            //TODO: DELETE NOTE
         },
         deleteNoteById:(state,action)=>{
 

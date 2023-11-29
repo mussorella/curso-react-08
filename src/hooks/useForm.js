@@ -9,6 +9,13 @@ export const useForm = ( initialForm = {}, formValidations = {}) => {
         createValidators();
     }, [ formState ])
     
+    
+    useEffect(() => {//estos e activa para poder cambiar de nota activa en este caso
+    setFormState(initialForm)//si el formulario cambia se vuelve a iniciar esto
+    }, [initialForm])
+    
+    
+    
     const isFormValid = useMemo( () => {
 
         for (const formValue of Object.keys( formValidation )) {
